@@ -211,6 +211,22 @@
     .wrap {
       flex-wrap: wrap;
     }
+    
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
 
    
 </style>
@@ -223,10 +239,10 @@
       </div>
       <div class="right">
         <div class="img1">
-          <img src="facebook-512.png" alt="facebook" />
-          <img src="instagram-512.png" alt="instagram" />
-          <img src="linkedin-512.png" alt="Linkedin" />
-          <img src="twitter-512.png" alt="twitter" />
+          <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+          <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+          <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+          <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
         </div>
         <ul>
           <li><a href="">ABOUT</a></li>
@@ -251,7 +267,7 @@
       <h1>EXPLORE.DREAM.DISCOVER</h1>
     </div>
     <div class="content2">
-      <h2>This is a mountain travel blog featuring beautiful destination,new experiences,and hidden places around the world</h2>
+      <h2>This is a mountain travel blog featuring beautiful destination, new experiences, and hidden places around the world</h2>
     </div>
     <div class="btn">
       <button class="button1">START EXPLORING</button>
@@ -281,7 +297,7 @@
     <p>WHERE TO STAY IN BUDAPEST: THE BEST<br>NEIGHBORHOODS FOR YOUR VISIT</p>
     <P>WHERE TO STAY IN VANCOUVER: THE BEST<br>NEIGHBORHOODS FOR YOUR VISIT</P>
   </div>
-  <audio control autoplay >
+  <audio autoplay >
     <source src="Forza Horizon 5  Title Screen Song 4K 1 Hour.mp3" type="audio/mp3">
   </audio>
    <footer class="footer">
