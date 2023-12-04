@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Barlow", sans-serif;
+  }
+
+  .right .img1 {
+    margin-left: 20%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+    background-color: black;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 15px 0px 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #266b93;
+    
+  }
+
+  .right {
+    margin-left: 26%;
+    margin-top: 0px;
+    width: 63%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .left img {
+    margin-left: 4%;
+    max-height: 153px;
+  }
+
+  .right .img1 img {
+    width: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+
+  .background-clip {
+    width: 117.8rem;
+    
+  }
+  nav .image1{
+    margin-bottom: 20px;
+    width:20%;
+    height:200px;
+  }
+  .content{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .columm{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    column-gap: 50px;
+    gap: 50px;
+    text-decoration: none;
+  }
+  .columm a {
+    text-decoration: none;
+    color: red;
+  }
+  h5{
+    margin:20px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+ 
+  p{
+    margin:5px 5px;
+  }
+  .box{
+    background-color: orangered;
+    color:white;
+   margin: 5px 5px 5px 5px;
+  }
+  
+  h7{
+    margin:5px 5px;
+  }
+  .conatiner3{
+      margin: auto;
+      width:100px; 
+    }
+    .footer {
+    background-color: #0d5894;
+    padding: 35px 9px 9px;
+    }
+        
+    .footer_col1 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_col1 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col1 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col1 h4::before{
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 119px;
+    }
+    .footer_col1 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .footer_col2 ul{
+      list-style: none;
+      font-size: 28px;
+    }
+      
+    
+    .footer_col2 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col2 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        margin-top: 1px;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col2 h4::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -7px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 170px;
+    }
+    .footer_col2 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col3 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col3 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col3 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col3 h4::before{
+      content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 212px;
+    }
+    .footer_col3 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col4 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col4 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col4 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col4 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+    .footer_col4 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col5 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    
+    .footer_col5 {
+      width: 17%;
+      padding: 0 15px;
+      height: 45px;
+    }
+    .footer_col5 h4{
+        font-size:29px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col5 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+   
+    .copyright{
+      text-align: center ;
+      font-size: 24px;
+      color: aliceblue;
+      margin-top: 34px;
+    }
+    .footer_col1 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col2 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }
+      
+    .footer_col3 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col4 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col5 .i1 img{
+      width: 10%;
+      margin: 1px -43px -32px 223px;
+    }
+    .footer_col5 .i2 img{
+      width: 10%;
+      margin: -6px 173px 3px;
+    }
+    .footer_col5 .i3 img{
+      width: 10%;
+      margin: -43px 19px 52px 110px;
+    }
+    .footer_col5 .i4 img{
+      width: 10%;
+      margin: -177px 23px 83px 55px;
+    }
+    .footer_col5 .i1{
+      width: auto;
+    }
+  
+.footer_col1 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col1 li a:hover{
+  color:aliceblue;
+}
+.footer_col3 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col3 li a:hover{
+  color:aliceblue;
+}
+.footer_col4 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col4 li a:hover{
+  color:aliceblue;
+}
+.footer_col2 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col2 li a:hover{
+  color:aliceblue;
+}
+
+  
+  
+        </style>
+        <body>
+            <header>
+                <nav>
+                  <div class="left">
+                    <a href="index.html"><img src="Final Logo.png" src="Logo"/></a>
+                  </div>
+                  <div class="right">
+                    <div class="img1">
+                      <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+                      <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+                      <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+                      <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
+                    </div>
+                    <ul>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="">BLOG</a></li>
+                      <li><a href="travel.html">TRAVELS</a></li>
+                      <li><a href="">DESTINATION</a></li>
+                      <li><a href="">RESOURCES</a></li>
+                      <li><a href="books.html">BOOKS</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </header>
+            
+              <div class="content">
+                <h1>BLOG POSTS</h1>
+              </div>
+              <div class="columm">
+              <div class="content1">
+                <div>
+                <a href="#"><img src="samet.jpg" alt="samet"></a>
+               <a href="#"> <h5>Samet Nangshe Viewpoint:<br> Best Sunrise Spot In Thailand</h5></a>
+                <h7>November 12,23</h7>
+                <p>The Samet Nangshe viewpoint in Thailand is one of the<br>most beautiful places I’ve ever seen in my travels. It’s also<br>fairly easy to get there by …</p>
+               <a href=""> <div class="box">.</div></a>
+                </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="arizon.jpg" alt="arizon"> </a>
+               <a href="#"><h5>15 Best Arizona Slot Canyons + Map</h5></a>
+                <h7>November 01,23</h7>
+                <p>Arizona is famous for the photogenic Antelope Canyons,<br>but there are some other nice slot canyons in Arizona<br>that are worth seeing as well. We traveled all …</p>
+                <a href=""><div class="box">.</div></a>
+                </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="bhutan.jpg" alt="bhutam"> </a>
+                <a href="#"><h5>7 Days In Bhutan Travel<br>Itinerary: Best Things To Do & See</h5></a>
+                <h7>October 20,23</h7>
+                <p>Bhutan is a wonderful, secluded little country in the<br>Himalayas. It’s definitely not the easiest country to visit,<br>but it’s worth the effort if you’re looking for …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="Taktsang.jpg" alt="Taktsang"></a>
+               <a href="#"> <h5>Tiger's Nest Monastery Bhutan Hike (Paro Taktsang)</h5></a>
+                <h7>October 02,23</h7>
+                <p>The Tiger's Nest Monastery hike is one of the best things to do in Bhutan, and probably one of the most amazing day hikes anywhere in the …</p>
+               <a href=""> <div class="box">.</div></a>
+                </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="serman.jpg" alt="serman"> </a>
+               <a href="#"><h5>Seram Island & Ora Beach Travel Guide (Maluku, Indonesia)</h5></a>
+                <h7>September 25,23</h7>
+                <p>Seram island in Maluku is one of the best kept secrets of Indonesia. The beautiful Ora Beach Resort has views like Bora Bora, and most of the …</p>
+                <a href=""><div class="box">.</div></a>
+                </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="antelope (1).jpg" alt="antelope"> </a>
+                <a href="#"><h5>Antelope Canyon X Tour Review, Photos & Experience</h5></a>
+                <h7>September 17,23</h7>
+                <p>We recently traveled through Arizona and tried all of the Antelope Canyon tours over the course of a week, and I would have to say our favorite …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="vietnam.jpg" alt="Vietnam"> </a>
+                <a href="#"><h5>Vietnam Incense Village Tour (Quang Phu Cau) From Hanoi</h5></a>
+                <h7>September 09,23</h7>
+                <p>The Hanoi area of Vietnam has lots of interesting places that you can visit on a short trip outside the city, and one of the best for …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="cotent1">
+                <div>
+                <a href="#"><img src="antelope1.jpg" alt="antelope"> </a>
+                <a href="#"><h5>Antelope Canyon Tours: Which Is Best? (Upper, Lower, X)</h5></a>
+                <h7>September 01,23</h7>
+                <p>Antelope Canyon is arguably the most famous and beautiful slot canyon in the United States. Located in Arizona on Navajo tribal land, the canyon has a bunch …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="hike.jpg" alt="Deaths"> </a>
+                <a href="#"><h5>Half Dome Deaths: How Many People Have Died On The Hike?
+                </h5></a>
+                <h7>August 25,23</h7>
+                <p>The infamous Half Dome hike in Yosemite National Park is commonly described as one of the most dangerous hikes in the United States. People have died from …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="palau.jpg" alt="Palau"> </a>
+                <a href="#"><h5>Palau Scenic Flight Over The Rock Islands + Pictures</h5></a>
+                <h7>August 20,23</h7>
+                <p>A scenic flight over the Rock Islands is becoming one of the most popular things for tourists to do in the little country of Palau, and it’s …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="rock1.jpg" alt="Rock"> </a>
+                <a href="#"><h5>Rock Islands Palau Boat Tour: Milky Way, Long Beach & More</h5></a>
+                <h7>August 18,23</h7>
+                <p>The Palau Rock Islands have earned UNESCO status for their incredible scenery, and they’re one of the main tourist sights in the country of Palau. While many …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+              <div class="content1">
+                <div>
+                <a href="#"><img src="mount dukono.jpg" alt="dukono"> </a>
+                <a href="#"><h5>Mount Dukono Volcano Hike In Maluku, Indonesia</h5></a>
+                <h7>August 05,23</h7>
+                <p>Mount Dukono is one of the most active volcanoes in the world, and it’s been erupting non-stop since 1933. If you’re a hiker you can go see …</p>
+                <a href="#"><div class="box">.</div></a>
+              </div>
+              </div>
+             </div>
+             <footer class="footer">
+              <div class="container3">
+                <div class="row">
+                  <div class="footer_col1">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                      <li>About mountain</li>
+                      <li>Meet the team</li>
+                      <li><a href="WriteForUs.html">Write for us</a></li>
+                      <li>Contact us</li>
+                      <li><a href="policy.html">Private policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer_col2">
+                    <h4>TRAVEL TIPS</h4>
+                    <ul>
+                      <li>Start Here</li>
+                      <li>Travel Blog</li>
+                      <li>Destination Guide</li>
+                      <li>Travel Credit Cards</li>
+                    </ul>
+                  </div>
+                  <div class="footer_col3">
+                    <h4>BOOK YOUR TRIP</h4>
+                    <ul>
+                      <li>Accomodation</li>
+                      <li><a href="flight.html">Cheap Flight</a></li>
+                      <li><a href="insurance.html">Travel Insurance</a></li>
+                      <li><a href="favoriteHostel.html">Favorite Hotel</a></li>
+                      <li>Favorite Companies</li>
+                    </ul>
+                  </div>
+                  <div class="footer_col4">
+                    <h4>BOOKS AND COURSES</h4>
+                    <ul>
+                      <li>Destination GuideBook</li>
+                      <li>Blogging Mentorship</li>
+                      <li>Writing Mentorship</li>
+                      <li>10 Years of Trips</li>
+                    </ul>
+                  </div>
+                  <div class="footer_col5">
+                    <h4>FOLLOW US ON THE WEB</h4>
+                    <ul>
+                      <li class="i1"><a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a></li>
+                      <li class="i2"><a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a></li>
+                      <li class="i3"><a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a></li>
+                      <li class="i4"><a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="copyright">
+                    <p>Copyright &#169; www.MountainTravelBlog.com | All right reserved</p>
+                   </div>
+              </section>
+             
+              
+              
+        </body>
+    </head>
+</html>
+</body>
+</html>
