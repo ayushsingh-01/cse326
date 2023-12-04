@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&family=Roboto+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Barlow", sans-serif;
+    }
+    .right .img1 {
+    margin-left: 20%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+    background-color: black;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 15px 0px 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #266b93;
+    
+  }
+
+  .right {
+    margin-left: 26%;
+    margin-top: 0px;
+    width: 63%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .left img {
+    margin-left: 4%;
+    max-height: 153px;
+  }
+
+  .right .img1 img {
+    width: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+} 
+.p1 h1{
+    font-size: 50px;
+    margin: 25px 1px 1px 1px;
+    text-align: center;
+
+}
+.p2 p{
+    font-size: 30px;
+    margin:35px 230px 2px 230px;
+    text-align: justify;
+}
+.p3 p{
+    font-size: 30px;
+    margin:50px 230px 2px 230px;
+    text-align: justify;
+}
+.p4 h3{
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 1px 1px 1px;
+}
+.img img{
+    width:25vw;
+    margin:15px 19px 2px 93px;
+    border: 5px solid whitesmoke;
+}
+.p5{
+    font-size: 30px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin:15px 2px 50px 65px;
+      
+      text-align: center;
+      cursor: pointer;
+}
+
+.footer {
+    background-color: #0d5894;
+    padding: 35px 9px 9px;
+    
+  }
+    .conatiner3{
+      margin: auto;
+      width:100px;
+      
+    }
+    .footer_col1 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_col1 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col1 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col1 h4::before{
+      content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 119px;
+    }
+    .footer_col1 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .footer_col2 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col2 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col2 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        margin-top: 1px;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col2 h4::before{
+      content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -7px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 170px;
+    }
+    .footer_col2 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col3 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col3 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col3 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col3 h4::before{
+      content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 212px;
+    }
+    .footer_col3 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col4 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col4 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col4 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col4 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+    .footer_col4 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col5 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    
+    .footer_col5 {
+      width: 17%;
+      padding: 0 15px;
+      height: 45px;
+    }
+    .footer_col5 h4{
+        font-size:29px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col5 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+   
+    .copyright{
+      text-align: center ;
+      font-size: 24px;
+      color: aliceblue;
+      margin-top: 34px;
+    }
+    .footer_col1 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col2 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col3 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col4 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col5 .i1 img{
+      width: 10%;
+      margin: 1px -43px -32px 223px;
+     
+    }
+     .footer_col5 .i2 img{
+      width: 10%;
+      margin: -6px 173px 3px;
+    }
+    .footer_col5 .i3 img{
+      width: 10%;
+      margin: -43px 19px 52px 110px;
+    }
+    .footer_col5 .i4 img{
+      width: 10%;
+      margin: -177px 23px 83px 55px;
+    }
+    .footer_col5  .i1{
+      width: auto;
+    }
+
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+.footer_col1 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col1 li a:hover{
+  color:aliceblue;
+}
+.footer_col3 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col3 li a:hover{
+  color:aliceblue;
+}
+.footer_col4 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col4 li a:hover{
+  color:aliceblue;
+}
+</style>
+<body>
+    <header>
+        <nav>
+          <div class="left">
+            <a href="index.html"><img src="Final Logo.png" src="Logo" /></a>
+          </div>
+          <div class="right">
+            <div class="img1">
+              <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+              <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+              <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+              <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
+            </div>
+            <ul>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">TRAVELS</a></li>
+              <li><a href="">DESTINATION</a></li>
+              <li><a href="">RESOURCES</a></li>
+              <li><a href="">BOOKS</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header> 
+      <div class="p1">
+        <h1>TRAVEL RESOURCES</h1>
+      </div>   
+      <div class="p2">
+        <p>Trying to decide which companies to book your trip with? Over the last 17 years of travel,
+             I’ve used hundreds of companies during my travels. Some have been great, some have been just awful.</p>
+      </div>
+      <div class="p3">
+        <p>Below is a list of the ones I come back to time and time again.
+             They are the best out there and continually offer superior deals and experiences. They are were all my travel planning and booking starts. Use them to book your trips too!</p>
+      </div>
+      <div class="p4">
+        <h3>Airfare</h3>
+      </div>
+      <div class="img">
+        <img src="comp2.webp">
+        <img src="comp4.jpg">
+        <img src="comp3.webp">
+      </div>
+      <div class="p5">
+        <p>This is my all-time favorite flight search<br> engine. It always seems to find the best <br>deals and its calendar view lets you see <br>which days are cheapest to fly. I like it<br> because it searches the small booking sites<br> no one else does so no stone is left<br> unturned. Start all your flight searches here.</p>
+        <p>This website should be your primary<br> accommodation website for guesthouses <br>and hotels in Asia. It has the most robust<br> inventory and offers the best rates.<br> When I travel around Asia, I always use this<br> website It’s just the best.</p>
+        <p>Google Flights lets you enter your <br>departure airport and see flights all <br>over the world on a map so you can determine<br> where the cheapest destination is. It’s a<br> good search engine to get a sense of routes,<br> connections, and fares.
+
+        </p>
+      </div>
+      <footer class="footer">
+        <div class="container3">
+          <div class="row">
+            <div class="footer_col1">
+              <h4>ABOUT US</h4>
+              <ul>
+                <li>About mountain</li>
+                <li>Meet the team</li>
+                <li><a href="WriteForUs.html">Write for us</a></li>
+                <li>Contact us</li>
+                <li><a href="policy.html">Private policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_col2">
+              <h4>TRAVEL TIPS</h4>
+              <ul>
+                <li>Start Here</li>
+                <li>Travel Blog</li>
+                <li>Destination Guide</li>
+                <li><a href="creditcard.html">Travel Credit Cards</a></li>
+              </ul>
+            </div>
+            <div class="footer_col3">
+              <h4>BOOK YOUR TRIP</h4>
+              <ul>
+                <li>Accomodation</li>
+                <li><a href="flight.html">Cheap Flight</a></li>
+                <li><a href="insurance.html">Travel Insurance</a></li>
+                <li><a href="favoriteHostel.html">Favorite Hotel</a></li>
+                <li>Favorite Companies</li>
+              </ul>
+            </div>
+            <div class="footer_col4">
+              <h4>BOOKS AND COURSES</h4>
+              <ul>
+                <li><a href="https://www.amazon.in/Bangkok-Travel-Dudes-Destination-Guidebook/dp/1533413002/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1701624708&sr=8-1">Destination GuideBook</a></li>
+                <li>Blogging Mentorship</li>
+                <li>Writing Mentorship</li>
+                <li><a href="books.html">10 Years of Trips</a></li>
+              </ul>
+            </div>
+            <div class="footer_col5">
+              <h4>FOLLOW US ON THE WEB</h4>
+              <ul>
+                <li class="i1"><a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a></li>
+                <li class="i2"><a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a></li>
+                <li class="i3"><a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a></li>
+                <li class="i4"><a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a></li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright &#169; www.MountainTravelBlog.com | All right reserved</p>
+             </div>
+            </section>
+            </footer>
+</body>
+</html>
