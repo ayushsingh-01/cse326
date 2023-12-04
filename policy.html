@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&family=Roboto+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Barlow", sans-serif;
+    }
+    .right .img1 {
+    margin-left: 20%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+    background-color: black;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 15px 0px 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #266b93;
+    
+  }
+
+  .right {
+    margin-left: 26%;
+    margin-top: 0px;
+    width: 63%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .left img {
+    margin-left: 4%;
+    max-height: 153px;
+  }
+
+  .right .img1 img {
+    width: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  .policy .p{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .effect h3{
+    margin-left: 48px;
+    font-size: 23px;
+    margin-top: 12px;
+
+  }
+  .para1 p {
+    text-align: justify;
+    font-size: 28px;
+    margin: 41px 50px 2px 40px
+  }
+  .para2 p{
+    text-align: justify;
+    font-size: 28px;
+    margin: 54px 50px 2px 40px
+  }
+  .para3 h2 {
+    font-size: 28px;
+    margin: 50px 2px 2px 35px;
+
+  }
+  .para4 p{
+    text-align: justify;
+    font-size: 28px;
+    margin: 11px 50px 2px 40px
+  }
+  .para5 h2{
+    margin: 50px 2px 2px 35px;
+    font-size: 28px;
+  }
+  .para6 p{
+    text-align: justify;
+    font-size: 28px;
+    margin: 11px 50px 2px 40px
+
+  }
+  .para7 h2{
+    margin: 50px 2px 2px 35px;
+    font-size: 28px;
+  }
+  .para8 { 
+    text-align: justify;
+    font-size: 28px;
+    margin: 11px 50px 2px 40px
+  }
+  .footer {
+    background-color: #0d5894;
+    padding: 35px 9px 9px;
+    
+  }
+    .conatiner3{
+      margin: auto;
+      width:100px;
+      
+    }
+    .footer_col1 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_col1 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col1 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col1 h4::before{
+      content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 119px;
+    }
+    .footer_col1 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .footer_col2 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col2 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col2 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        margin-top: 1px;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col2 h4::before{
+      content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -7px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 170px;
+    }
+    .footer_col2 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col3 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col3 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col3 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col3 h4::before{
+      content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 212px;
+    }
+    .footer_col3 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col4 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col4 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col4 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col4 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+    .footer_col4 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col5 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    
+    .footer_col5 {
+      width: 17%;
+      padding: 0 15px;
+      height: 45px;
+    }
+    .footer_col5 h4{
+        font-size:29px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col5 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+   
+    .copyright{
+      text-align: center ;
+      font-size: 24px;
+      color: aliceblue;
+      margin-top: 34px;
+    }
+    .footer_col1 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col2 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col3 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col4 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col5 .i1 img{
+      width: 10%;
+      margin: 1px -43px -32px 223px;
+     
+    }
+     .footer_col5 .i2 img{
+      width: 10%;
+      margin: -6px 173px 3px;
+    }
+    .footer_col5 .i3 img{
+      width: 10%;
+      margin: -43px 19px 52px 110px;
+    }
+    .footer_col5 .i4 img{
+      width: 10%;
+      margin: -177px 23px 83px 55px;
+    }
+    .footer_col5  .i1{
+      width: auto;
+    }
+
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+.footer_col1 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col1 li a:hover{
+  color:aliceblue;
+}
+.footer_col3 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col3 li a:hover{
+  color:aliceblue;
+}
+.footer_col4 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col4 li a:hover{
+  color:aliceblue;
+}
+
+
+</style>
+
+<body>
+     <header>
+    <nav>
+      <div class="left">
+        <a href="index.html"><img src="Final Logo.png" src="Logo" /></a>
+      </div>
+      <div class="right">
+        <div class="img1">
+          <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+          <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+          <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+          <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
+        </div>
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="travel.html">TRAVELS</a></li>
+          <li><a href="">DESTINATION</a></li>
+          <li><a href="">RESOURCES</a></li>
+          <li><a href="">BOOKS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="policy">
+    <h1 class="p">PRIVATE POLICY</h1>
+  </div>
+  <div class="effect">
+    <h3>Effective and Updated: December 1th, 2023</h3>
+  </div>
+  <div class="para1">
+    <p>Mountains Travel, Inc (“The Company”, “we”, “us”, “MountainTravelBlog.com”) is committed to protecting your privacy when you visit our website, MountainsTravelBlog.com.
+         You can access MountainsTravelBlog.com and browse our site without disclosing any of your personal data. 
+        MountainsTravelBlog.com does not collect personal information about individuals, such as names and mailing or e-mail addresses unless it is knowingly provided by the individual and he or she has agreed to the terms under which MountainsTravelBlog.com will use it.</p>
+  </div>
+  <div class="para2">
+    <p>Please read the Privacy Policy carefully before you start to use the Website. By using the Website or by clicking to accept or agree to the Terms of Use when this option is made available to you, you accept and agree to be bound and abide by the Privacy Policy. If you do not want to agree to the Privacy Policy, you must not access or use the Website.</p>
+  </div>
+  <div class="para3">
+    <h2>Disclosure of Information</h2>
+  </div>
+  <div class="para4">
+    <p>MountainsTravelBlog.com will not sell, trade, or rent your personal information to others. We do not automatically log personal data nor do we link information automatically logged by other means with personal data about specific individuals. We may use IP addresses to compile and provide aggregate statistics about our visitors, traffic patterns, and administer the site. IP addresses are not linked to personally identifiable information. We collect only the personal data that you may volunteer while using our services. We do not collect information about our visitors from other sources, such as public records or bodies, or private organizations.</p>
+  </div>
+  <div class="para5">
+    <h2>Cookies</h2>
+  </div>
+  <div class="para6">
+    <p>Similar to other commercial websites, our website utilizes a standard technology called “cookies” and server logs to collect information about how our site is used. Information gathered through cookies and server logs may include the date and time of visits, the pages viewed, time spent at our site, and the websites visited just before and just after our own, as well as your IP address.
+
+        A cookie is a very small text document, which often includes an anonymous unique identifier. When you visit a website, that site’s computer asks your computer for permission to store this file in a part of your hard drive specifically designated for cookies. Each website can send its own cookie to your browser if your browser’s preferences allow it, but (to protect your privacy) your browser only permits a website to access the cookies it has already sent to you, not the cookies sent to you by other sites.</p>
+  </div>
+  <div class="para7">
+    <h2>Information We Collect on You</h2>
+  </div>
+  <div class="para8">
+    <p>When you access the Website, the Company will learn certain information about you during your visit. As a business, we collect personal data from you in a number of ways including:
+
+        (1.) Newsletter optins: Your name and email address.
+        (2.) Waiting Lists: Your name and email address.
+        (3.) Transactions: Your name, email address, billing information, and payment source.
+        (4.) Comments: Your name, email address, and comment. Please note by posting a comment on this Site or in our forum, you consent to the posting of any Personal Information that you provide. You should be aware that such Personal Information can be read, collected, or used by other visitors to these public areas. We have no control over how these visitors use your Personal Information.</p>
+  </div>
+  <footer class="footer">
+    <div class="container3">
+      <div class="row">
+        <div class="footer_col1">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li>About mountain</li>
+            <li>Meet the team</li>
+            <li><a href="WriteForUs.html">Write for us</a></li>
+            <li>Contact us</li>
+            <li><a href="policy.html">Private policy</a></li>
+          </ul>
+        </div>
+        <div class="footer_col2">
+          <h4>TRAVEL TIPS</h4>
+          <ul>
+            <li>Start Here</li>
+            <li>Travel Blog</li>
+            <li>Destination Guide</li>
+            <li>Travel Credit Cards</li>
+          </ul>
+        </div>
+        <div class="footer_col3">
+          <h4>BOOK YOUR TRIP</h4>
+          <ul>
+            <li>Accomodation</li>
+            <li><a href="flight.html">Cheap Flight</a></li>
+            <li><a href="insurance.html">Travel Insurance</a></li>
+            <li><a href="favoriteHostel.html">Favorite Hotel</a></li>
+            <li>Favorite Companies</li>
+          </ul>
+        </div>
+        <div class="footer_col4">
+          <h4>BOOKS AND COURSES</h4>
+          <ul>
+            <li><a href="https://www.amazon.in/Bangkok-Travel-Dudes-Destination-Guidebook/dp/1533413002/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1701624708&sr=8-1">Destination GuideBook</a></li>
+            <li>Blogging Mentorship</li>
+            <li>Writing Mentorship</li>
+            <li>10 Years of Trips</li>
+          </ul>
+        </div>
+        <div class="footer_col5">
+          <h4>FOLLOW US ON THE WEB</h4>
+          <ul>
+            <li class="i1"><a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a></li>
+            <li class="i2"><a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a></li>
+            <li class="i3"><a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a></li>
+            <li class="i4"><a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &#169; www.MountainTravelBlog.com | All right reserved</p>
+         </div>
+    </section>
+</body>
+</html>
