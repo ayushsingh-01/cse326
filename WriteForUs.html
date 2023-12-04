@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&family=Roboto+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Barlow", sans-serif;
+    }
+    .right .img1 {
+    margin-left: 20%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+    background-color: black;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 15px 0px 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #266b93;
+    
+  }
+
+  .right {
+    margin-left: 26%;
+    margin-top: 0px;
+    width: 63%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .left img {
+    margin-left: 4%;
+    max-height: 153px;
+  }
+
+  .right .img1 img {
+    width: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  .para1 h1{
+    font-size: 46px;
+    margin: 69px 10px 55px 0px;
+    text-align: center;
+  }
+  .img1 img{
+    width: 50%;
+    margin: -30px 7px 0px 455px
+  }
+  .para2 h4{
+    font-size: 26px;
+    margin: 10px 0px 2px 455px;
+  }
+  .para3 p{
+    text-align: justify;
+    font-size: 30px;
+    margin: 28px 190px 7px 367px;
+  }
+  .para4 p{
+    text-align: justify;
+    font-size: 30px;
+    margin: 28px 190px 7px 367px;
+  }
+  .para5 h2{
+    font-size: 36px;
+    margin: 76px 758px 22px 0px;
+    text-align: center;
+  }
+  .para6 p{
+    font-size: 30px;
+    margin: 1px 351px 9px 354px;
+    text-align: justify;
+  }
+  .para7 ul li {
+    
+    margin:  11px 3px 4px 2px;
+   
+  }
+  .para7 ul {
+    font-size: 30px;
+    margin: 31px 2px 2px 358px;
+    text-align: justify;
+  }
+  .para8 h2{
+    font-size: 37px;
+    margin: 76px 860px 2px -80px;
+    text-align: center;
+  }
+  .para9 p{
+    font-size: 30px;
+    margin: 24px 200px 5px 312px;
+    text-align: justify;
+  }
+  .para9 b{
+    color:#266b93;
+    cursor: pointer;
+  }
+  .para10 h4{
+    font-size: 31px;
+    margin: 24px 11px 20px 299px;
+
+  }
+  .para11 ul {
+    font-size: 30px;
+    margin: 40px 1px 20px 359px;
+  
+  }
+  .para11 ul li{
+    margin: 13px 2px 2px 2px;
+  }
+  .footer {
+    background-color: #0d5894;
+    padding: 35px 9px 9px;
+    
+  }
+    .conatiner3{
+      margin: auto;
+      width:100px;
+      
+    }
+    .footer_col1 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_col1 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col1 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col1 h4::before{
+      content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 119px;
+    }
+    .footer_col1 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .footer_col2 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col2 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col2 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        margin-top: 1px;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col2 h4::before{
+      content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -7px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 170px;
+    }
+    .footer_col2 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col3 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col3 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col3 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col3 h4::before{
+      content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -6px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 212px;
+    }
+    .footer_col3 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col4 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    .footer_col4 {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col4 h4{
+        font-size:30px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col4 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+    .footer_col4 ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .footer_col5 ul {
+      list-style: none;
+      font-size: 28px;
+    }
+    
+    .footer_col5 {
+      width: 17%;
+      padding: 0 15px;
+      height: 45px;
+    }
+    .footer_col5 h4{
+        font-size:29px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+        color:rgb(214, 232, 248);
+    }
+    .footer_col5 h4::before{
+      content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #58abf0;
+    width: 289px;
+    }
+   
+    .copyright{
+      text-align: center ;
+      font-size: 24px;
+      color: aliceblue;
+      margin-top: 34px;
+    }
+    .footer_col1 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col2 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col3 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+
+    }.footer_col4 li:hover{
+      color:aliceblue;
+      cursor: pointer;
+    }
+    .footer_col5 .i1 img{
+      width: 10%;
+      margin: 1px -43px -32px 223px;
+     
+    }
+     .footer_col5 .i2 img{
+      width: 10%;
+      margin: -6px 173px 3px;
+    }
+    .footer_col5 .i3 img{
+      width: 10%;
+      margin: -43px 19px 52px 110px;
+    }
+    .footer_col5 .i4 img{
+      width: 10%;
+      margin: -177px 23px 83px 55px;
+    }
+    .footer_col5  .i1{
+      width: auto;
+    }
+
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+.footer_col1 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col1 li a:hover{
+  color:aliceblue;
+}
+.footer_col3 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col3 li a:hover{
+  color:aliceblue;
+}
+.footer_col4 li a{
+  text-decoration: none;
+  color:black;
+}
+.footer_col4 li a:hover{
+  color:aliceblue;
+}
+
+
+  </style>
+  <body>
+    <header>
+        <nav>
+          <div class="left">
+            <a href="index.html"><img src="Final Logo.png" src="Logo" /></a>
+          </div>
+          <div class="right">
+            <div class="img1">
+              <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+              <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+              <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+              <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
+            </div>
+            <ul>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="StartE.html">BLOG</a></li>
+              <li><a href="travel.html">TRAVELS</a></li>
+              <li><a href="">DESTINATION</a></li>
+              <li><a href="">RESOURCES</a></li>
+              <li><a href="">BOOKS</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="para1">
+        <h1>WANT TO WRITE FOR MOUNTAIN TRAVELS? HERE'S HOW!</h1>
+      </div>
+      <div class="img1">
+        <img src="aboutimg1.jpg" alt="yellow">
+      </div>
+      <div class="para2">
+        <h4>Updated: 01/12/2023 | December 1th, 2023</h4>
+      </div>
+      <div class="para3">
+        <p>For years, I turned away unsolicited guest posts, but, this year, I decided it was time to change that policy as I want to add more voices, opinions, stories, and tips to this site.</p>
+      </div>
+      <div class="para4">
+        <p>I want to bring in people out there who have helpful information and insight I might not have, especially now that I’m traveling a lot less.</p>
+      </div>
+      <div class="para5">
+        <h2>WHAT CONTENT DO WE WANT?</h2>
+      </div>
+      <div class="para6">
+        <p>First, what kind of submissions are we looking for? We’re interested in the following (and only the following) areas:-</p>
+      </div>
+      <div class="para7">
+        <ul>
+            <li>Africa-related content (bonus points if it’s East or Central Africa)</li>
+            <li>Middle East–related content</li>
+            <li>Central Asia–related content</li>
+            <li>India-related content</li>
+            <li>Brazil-related content</li>
+            <li>Senior/Older travel</li>
+            <li>Family travel</li>
+            <li>Ultra-cheap travel/backpacking</li>
+            <li>Solo female travel travel</li>
+
+        </ul>
+      </div>
+      <div class="para8">
+        <h2>How To Submit a Post</h2>
+      </div>
+      <div class="para9">
+        <p>Send an email to <b>MountainTravelBlog@gmail.com </b> with the exact title “New Guest Writer Article Submission”</p>
+      </div>
+      <div class="para10">
+        <h4>Include the following:</h4>
+      </div>
+      <div class="para11">
+        <ul>
+            <li>Your travel history</li>
+            <li>Your blog or channel</li>
+            <li>A link to two other guest posts you’ve done</li>
+            <li>Your topic idea(s), with suggested title(s) and description(s) of the article(s)</li>
+        </ul>
+      </div>
+      <footer class="footer">
+        <div class="container3">
+          <div class="row">
+            <div class="footer_col1">
+              <h4>ABOUT US</h4>
+              <ul>
+                <li>About mountain</li>
+                <li>Meet the team</li>
+                <li><a href="WriteForUs.html">Write for us</a></li>
+                <li>Contact us</li>
+                <li><a href="policy.html">Private policy</a></li>
+              </ul>
+            </div>
+            <div class="footer_col2">
+              <h4>TRAVEL TIPS</h4>
+              <ul>
+                <li>Start Here</li>
+                <li>Travel Blog</li>
+                <li>Destination Guide</li>
+                <li>Travel Credit Cards</li>
+              </ul>
+            </div>
+            <div class="footer_col3">
+              <h4>BOOK YOUR TRIP</h4>
+              <ul>
+                <li>Accomodation</li>
+                <li><a href="flight.html">Cheap Flight</a></li>
+                <li><a href="insurance.html">Travel Insurance</a></li>
+                <li><a href="favoriteHostel.html">Favorite Hotel</a></li>
+                <li>Favorite Companies</li>
+              </ul>
+            </div>
+            <div class="footer_col4">
+              <h4>BOOKS AND COURSES</h4>
+              <ul>
+                <li><a href="https://www.amazon.in/Bangkok-Travel-Dudes-Destination-Guidebook/dp/1533413002/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1701624708&sr=8-1">Destination GuideBook</a></li>
+                <li>Blogging Mentorship</li>
+                <li>Writing Mentorship</li>
+                <li><a href="books.html">10 Years of Trips</a></li>
+              </ul>
+            </div>
+            <div class="footer_col5">
+              <h4>FOLLOW US ON THE WEB</h4>
+              <ul>
+                <li class="i1"><a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a></li>
+                <li class="i2"><a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a></li>
+                <li class="i3"><a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a></li>
+                <li class="i4"><a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a></li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright &#169; www.MountainTravelBlog.com | All right reserved</p>
+             </div>
+        </section>
+    </body>
+  </html>
