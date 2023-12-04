@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Poppins&family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Barlow", sans-serif;
+  }
+
+  .right .img1 {
+    margin-left: 20%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+    background-color: black;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 15px 0px 20px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #266b93;
+    
+  }
+
+  .right {
+    margin-left: 26%;
+    margin-top: 0px;
+    width: 63%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .left img {
+    margin-left: 4%;
+    max-height: 153px;
+  }
+
+  .right .img1 img {
+    width: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+
+  .background-clip {
+    width: 117.8rem;
+    
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    color: whitesmoke;
+    width: 100%;
+    margin-bottom: 20vw;
+   text-align: center;
+    font-size: 3rem;
+    
+  }
+  .content2{
+    position: absolute;
+    bottom: 0;
+    color:  whitesmoke;
+    width: 100%;
+    margin-bottom: 15vw;
+   text-align: center;
+    font-size: 1.39rem;
+    
+  }
+  
+  .btn .button1{
+    position: absolute;
+    bottom: 0;
+    color: rgb(252, 249, 249);
+    width: 15%;
+    margin-bottom: 7.5vw;
+   text-align: center;
+    font-size: 1.58rem;
+    margin: 0 0 125px 750px;
+    border:2px solid whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .btn .button1:hover{
+    background-color: rgb(246, 189, 82);
+  }
+  .container2 {
+    text-align:center;
+    margin: 90px 0 0 0;
+    font-size: 40px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .footer {
+    background-color: #0d5894;
+    padding: 70px 0;
+    
+  }
+  .copyright {
+      padding-top: 120px;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 23px;
+
+
+    }
+    .image img {
+      width:30vw;
+      margin: 50px 10px 10px 30px;
+      
+    }
+     .phrase1{
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin: auto;
+      font-weight: bold;
+      text-align: center;
+    }
+    .phrase2{
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+      margin:auto;
+      font-weight: bold;
+    }
+    .image2 img {
+      width:30vw;
+      margin: 50px 10px 10px 30px;
+    }
+    .conatiner3{
+      margin: auto;
+      width:100px;
+      
+    }
+    .footer_col ul {
+      list-style: none;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_col {
+      width: 17%;
+      padding: 0 15px;
+    }
+    .footer_col h4{
+        font-size:25px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        font-weight:bold;
+        position: relative;
+    }
+    .footer_col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      height: 2px;
+      box-sizing: border-box;
+      background-color: red;
+      width: 50px;
+    }
+    .footer_col ul li:not(:last-child){
+      margin-bottom: 10px;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+</style>
+
+</head>
+<body  vlink="Blue" link="Blue" alink="Blue" >
+    <header>
+    <nav>
+      <div class="left">
+        <a href="index.html"><img src="Final Logo.png" src="Logo" /></a>
+      </div>
+      <div class="right">
+        <div class="img1">
+          <a href="https://www.facebook.com/"><img src="facebook-512.png" alt="facebook" /></a>
+          <a href="https://www.instagram.com/"><img src="instagram-512.png" alt="instagram" /></a>
+          <a href="https://www.linkedin.com/"><img src="linkedin-512.png" alt="Linkedin" /></a>
+          <a href="https://twitter.com/"><img src="twitter-512.png" alt="twitter" /></a>
+        </div>
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="travel.html">TRAVELS</a></li>
+            <li><a href="destination.html">DESTINATION</a></li>
+            <li><a href="resource.html">RESOURCES</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<h1 style="padding-left: 820px; padding-top: 80px; padding-bottom: 10px; font-size: 40px;">Travel Books</h1>
+
+
+<img src="divide.png" style="padding-left: 189px; padding-top: 20px; padding-bottom: 50px;">
+
+
+<style>
+  .link_color{
+    text-decoration: none;
+  }
+  .link_color:hover{ 
+color:black
+  }
+</style>
+
+<div style="padding-bottom: 50px;">
+  <img src="ten_years.jpg" width="450px" style="float: left; padding-left: 473px; padding-top: 30px; ">
+  <b><em><a class="link_color" href="https://a.co/d/7LX5LFT"><h4 style="font-size: 27px; padding-left: 10px;">Ten Years of Nomad: A Traveler's Journey Home</h4></a></em></b>
+
+  <p style="font-size: 27px; padding-left: 10px; padding-right: 370px; padding-top: 10px;"> The book is a memoir about my ten years traveling and backpacking the world, philosophy on travel, and the lessons I learned that can help you travel better. It takes you on a trip around the world from start to finish: getting the bug, the planning, setting off, the highs, the lows, the friends, what happens when you come back — and the lessons and advice that come with all that. It is my opus on travel.
+
+  </p>
+</div>
+
+<img src="divide.png"  style="padding-left: 189px; padding-top: 20px; padding-bottom: 50px;">
+
+<div>
+  <img src="book2.png" width="450px" style="float: left; padding-left: 473px; padding-top: 30px; ">
+  <b><em><a class="link_color" href="https://a.co/d/6WnJ4WA"><h4 style="font-size: 27px; padding-left: 10px;">How to Travel the World on $50 a Day</h4></a></em></b>
+
+  <p style="font-size: 27px; padding-left: 10px; padding-right: 370px; padding-top: 10px;"> The book is a memoir about my ten years traveling and backpacking the world, philosophy on travel, and the lessons I learned that can help you travel better. It takes you on a trip around the world from start to finish: getting the bug, the planning, setting off, the highs, the lows, the friends, what happens when you come back — and the lessons and advice that come with all that. It is my opus on travel.
+
+  </p>
+</div>
+
+<img src="divide.png"  style="padding-left: 189px; padding-top: 20px; padding-bottom: 50px;">
+
+</body>
+</html>
